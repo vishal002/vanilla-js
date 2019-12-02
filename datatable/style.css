@@ -1,0 +1,116 @@
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden;
+    font-family: Arial;
+    background-color: #888;
+}
+
+.datatable {
+    max-width: 80%;
+    min-width: 300px;
+    width: 100%;
+    display: block;
+    margin: 20px auto;
+    position: relative;
+    background-color: white;
+    padding: 20px;
+}
+.datatable .headerSearch {
+    float: right;
+}
+
+.datatable .tableList {
+    min-height: 250px;
+    text-indent: 20px;
+    margin: 20px 0 20px;
+}
+
+.tableList .objectBlock {
+    position: relative;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.datatable #showing_out_of {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.pageButton {
+    border: 1px solid black;
+    padding: 5px;
+}
+
+.clickPageNumber {
+    background-color: lightgrey;
+    padding: 5px;
+    margin-left: 2px;
+    margin-right: 2px;
+}
+
+.datatable-block {
+    text-align: center;
+    width: 100%;
+}
+
+.datatable-block span {
+    display: inline-block;
+}
+
+.datatable-block .pageButton {
+    background-color: grey;
+    color: white;
+}
+
+.datatable-block span:hover {
+    cursor: pointer;
+}
+
+.opacity {
+    opacity: 0.5;
+}
+
+.outline-none {
+    outline: none;
+    user-select: none;
+}
+
+.datatable table, td, th {
+    border: 1px solid #ddd;
+    text-align: left;
+    padding: 15px;
+}
+
+.datatable table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.datatable table tbody tr:nth-child(even) {
+    background-color: #dddddd40;
+}
+
+.datatable thead tr th {
+    text-transform: uppercase;
+}
+
+tbody {
+    display: block;
+    max-height: 60vh;
+    overflow: auto;
+}
+
+thead, tbody tr {
+    display: table;
+    width: 100%;
+    table-layout: fixed; /* even columns width , fix width of table too*/
+}
+
+thead {
+    width: calc(100% - 0em) /* scrollbar is average 1em/16px width, remove it from thead width */
+}
+
